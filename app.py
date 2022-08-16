@@ -23,5 +23,9 @@ def proxylist():
 def clearlist():
     return '<h1>Succesfully Cleared<h1>'
 
+@app.route('/proxyaddto2')
+def proxyaddto2():
+    valid_proxies2 = valid_proxies
+
 if __name__ == '__main__':
     app.run()
