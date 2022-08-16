@@ -1,5 +1,5 @@
 from flask import Flask
-from main import valid_proxies2
+
 
 app = Flask(__name__)
 
