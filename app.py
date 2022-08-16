@@ -11,7 +11,7 @@ def main():
     return '<h2> Hello World <h2>'
 
 @app.route('/setproxylist/<ipport>')
-def setproxylist():
+def setproxylist(ipport):
     valid_proxies.append(ipport)
     return '<h1>Success<h1>'
 
