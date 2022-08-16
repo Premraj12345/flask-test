@@ -21,11 +21,17 @@ def proxylist():
 
 @app.route('/clearlist')
 def clearlist():
-    return '<h1>Succesfully Cleared<h1>'
+    valid_proxies.clear()
+    return '<h1>Succesfully Cleared valid_proxies List<h1>'
+
+@app.route('/clearlist2')
+def clearlist2():
+    valid_proxies2.clear()
+    return '<h1> Successfully Cleared valid_proxies2 List<h1>'
 
 @app.route('/proxyaddto2')
 def proxyaddto2():
-    valid_proxies2 = valid_proxies2 + valid_proxies
+    valid_proxies2.append(valid_proxies)
     return '<h1>Succesfully added to valid_proxies2 <h1>'
 if __name__ == '__main__':
     app.run()
