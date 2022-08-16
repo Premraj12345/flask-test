@@ -26,6 +26,6 @@ def clearlist():
 @app.route('/proxyaddto2')
 def proxyaddto2():
     valid_proxies2 = valid_proxies
-
+    return '<h1>Succesfully added to valid_proxies2 <h1>'
 if __name__ == '__main__':
     app.run()
