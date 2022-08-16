@@ -6,7 +6,7 @@ app = Flask(__name__)
 def main():
     img = 'Inkem.jpg'
     return f'''
-    <img src="{img}"></img>
+    <img src="/{img}"></img>
     '''
 if __name__ == '__main__':
     app.run()
